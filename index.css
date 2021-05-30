@@ -1,0 +1,201 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: #D3D3D3;
+}
+
+.container-navbar{
+    margin-top: 3em;
+    width: 100%;
+    height: 2.4em;
+    display: flex;
+    justify-content: space-around;
+
+    background-color: black;
+    
+}
+
+.logo{
+    
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 2em;
+    z-index: 10;
+}
+
+.logo img{
+    width: 6%;
+    position: absolute;
+}
+
+.navbar {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+    
+}
+
+.lista-navegacion {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lista-navegacion li {
+    margin: 0 0.5em;
+    list-style: none;
+    font-size: 1.6em;
+    color: #F5F3F4;
+}
+
+.login-registrar {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.login-registrar a {
+    margin: 0 1em;
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #F5F3F4;
+}
+
+.portada {
+    margin-top: 3em;
+    width: 100%;
+    height: 50%;
+    background-color: #161A1D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-animacion {
+    width: 50%;
+    height: 80%;
+    background-color: white;
+    opacity: 0%;
+    animation: aparecer 20s infinite;
+}
+
+@keyframes aparecer {
+    0% {
+        opacity: 0%;
+    }
+
+    20% {
+        opacity: 100%;
+    }
+
+    40% {
+        opacity: 100%;
+    }
+
+    60% {
+        opacity: 100%;
+    }
+
+    80% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+.animacion {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diagonal {
+    width: 100%;
+    height: 8em;
+    background-image: linear-gradient(45deg, white, white, #BA181B, #BA181B) ;
+    background-size: 600%;
+    background-position: left;
+    z-index: 2;
+    transform: skewY(-16.8deg);
+    animation: rellenar 20s infinite;
+}
+
+@keyframes rellenar {
+    0% {
+        background-position: left;
+    }
+
+    25% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: right; 
+    }
+
+    75% {
+        background-position: right; 
+    }
+
+    100% {
+        background-position: right;
+    }
+}
+
+.leon {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+.leon img {
+    width: 16%;
+    z-index: 6;
+    animation: aparecer2 20s infinite;
+}
+
+@keyframes aparecer2 {
+    0% {
+        opacity: 0%;
+    }
+
+    20% {
+        opacity: 0%;
+    }
+
+    40% {
+        opacity: 100%;
+    }
+
+    60% {
+        opacity: 100%;
+    }
+
+    80% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+
