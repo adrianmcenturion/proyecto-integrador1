@@ -50,7 +50,7 @@ body{
 }
 
 .lista-navegacion li {
-    margin: 0 0.5em;
+    margin: 0 0.06em;
     list-style: none;
     font-size: 1.6em;
     color: #F5F3F4;
@@ -65,7 +65,7 @@ body{
 }
 
 .login-registrar a {
-    margin: 0 1em;
+    margin: 0 0.7em;
     text-decoration: none;
     font-size: 1.6em;
     color: #F5F3F4;
@@ -82,11 +82,12 @@ body{
 }
 
 .container-animacion {
-    width: 50%;
+    width: 55vw;
     height: 80%;
     background-color: white;
     opacity: 0%;
     animation: aparecer 20s infinite;
+    overflow: hidden;
 }
 
 @keyframes aparecer {
@@ -112,16 +113,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .diagonal {
     width: 100%;
     height: 8rem;
-    background-image: linear-gradient(45deg, white, white, #BA181B, #BA181B) ;
+    background-image: linear-gradient(45deg, white, white, #BA181B, #BA181B);
+    
     background-size: 600%;
     background-position: left;
+    
     z-index: 2;
-    transform: skewY(-16.8deg);
+    transform: skewY(-15.5deg);
     animation: rellenar 20s infinite;
 }
 
@@ -178,3 +182,9 @@ body{
 
 
 
+@media (min-width: 1025px) and (max-width: 1200px){
+    .container-animacion {
+        width: 70vw;
+        height: 80%;
+    }
+}
