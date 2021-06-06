@@ -1,13 +1,17 @@
 <html>
   <head>
     <title>Camisetas River</title>
-    <link rel="stylesheet" href="index.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+    
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
@@ -68,31 +72,140 @@
         <h3>CAMISETAS</h3>
         <div class="contenedor-cards">
           <div class="card-camisetas">
-            <img
-              src="./img/river-madrid2.jpg"
-              alt="Camiseta de la final de Madrid"/>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo quam nihil sunt nemo facere possimus? Numquam, atque?</h4>
-          </div>
-          <div class="card-camisetas">
-            <img
-              src="./img/libertadores2015.jpg"
-              alt="Camiseta de la final de Madrid"/>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo quam nihil sunt nemo facere possimus? Numquam, atque?</h4>
-          </div>
-          <div class="card-camisetas">
-            <img
-              src="./img/libertadores96.jpg"
-              alt="Camiseta de la final de Madrid"/>
-              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo quam nihil sunt nemo facere possimus? Numquam, atque?</h4>
-          </div>
-          <div class="card-camisetas">
-            <img
+            <div class="container-carousel">
+              <div id="carouselExampleControlsNoTouching" class="carousel slide carousel-dark" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/river-madrid2.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/river-madrid-3.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/river-madrid-4.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/river-madrid-5.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!-- <img
               src="./img/libertadores86.jpg"
-              alt="Camiseta de la final de Madrid"/>
+              alt="Camiseta de la final de Madrid"/> -->
               <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo quam nihil sunt nemo facere possimus? Numquam, atque?</h4>
           </div>
+          <div class="card-camisetas">
+            <div class="container-carousel">
+              <div id="carouselExampleControlsNoTouching-2" class="carousel slide carousel-dark" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/libertadores2015.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores2015-2.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores2015-3.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores2015-4.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching-2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching-2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!-- <img
+              src="./img/libertadores86.jpg"
+              alt="Camiseta de la final de Madrid"/> -->
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo quam nihil sunt nemo facere possimus? Numquam, atque?</h4>
+          </div>
+          <div class="card-camisetas">
+            <div class="container-carousel">
+              <div id="carouselExampleControlsNoTouching-3" class="carousel slide carousel-dark" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/libertadores96.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores96-2.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores96-3.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores96-4.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching-3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching-3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!-- <img
+              src="./img/libertadores86.jpg"
+              alt="Camiseta de la final de Madrid"/> -->
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo quam nihil sunt nemo facere possimus? Numquam, atque?</h4>
+          </div>
+          <div class="card-camisetas">
+            <div class="container-carousel">
+              <div id="carouselExampleControlsNoTouching-4" class="carousel slide carousel-dark" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/libertadores86.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores86-2.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores86-3.jpg" class="d-block" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/libertadores86-4.jpg" class="d-block" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching-4" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching-4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <!-- <img
+              src="./img/libertadores86.jpg"
+              alt="Camiseta de la final de Madrid"/> -->
+              <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quo quam nihil sunt nemo facere possimus? Numquam, atque?</h4>
+          </div>
+
+          
         </div>
       </section>
+      
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
