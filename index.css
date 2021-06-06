@@ -1,11 +1,9 @@
 * {
   scroll-behavior: smooth;
-  font-family: 'Merriweather Sans', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
   box-sizing: inherit;
   font-weight: inherit;
-  
 }
-
 
 body {
   margin: 0%;
@@ -139,7 +137,6 @@ body {
   background-color: #0b090a;
 }
 
-
 .logo {
   width: 50%;
   display: flex;
@@ -226,12 +223,10 @@ body {
   cursor: pointer;
 }
 
-
-
 .section-quienes-somos {
   width: 100%;
   height: 80%;
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -257,23 +252,27 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(155deg, #D3D3D3, #D3D3D3, #BA181B, #BA181B, #D3D3D3, #D3D3D3);
+  background-image: linear-gradient(
+    155deg,
+    #d3d3d3,
+    #d3d3d3,
+    #ba181b,
+    #ba181b,
+    #d3d3d3,
+    #d3d3d3
+  );
   background-size: 300%;
   background-position: left;
 
   animation: degrade-movimiento 15s infinite alternate paused;
-  
-  
 
-  box-shadow: 1px 1px 44px 12px rgba(0,0,0,0.55);
--webkit-box-shadow: 1px 1px 44px 12px rgba(0,0,0,0.55);
--moz-box-shadow: 1px 1px 84px 19px rgba(0,0,0,0.75);
-border-radius: 20px;
-
+  box-shadow: 1px 1px 44px 12px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 1px 1px 44px 12px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 1px 1px 84px 19px rgba(0, 0, 0, 0.75);
+  border-radius: 20px;
 }
 
 @keyframes degrade-movimiento {
-
   0% {
     background-position: left;
   }
@@ -281,18 +280,14 @@ border-radius: 20px;
   100% {
     background-position: right;
   }
-  
 }
 
 .card-quienes-somos:hover {
   transition: 1s all ease-in-out;
   filter: brightness(115%);
-  
-  animation: degrade-movimiento 15s infinite alternate running;
-  
-  
-}
 
+  animation: degrade-movimiento 15s infinite alternate running;
+}
 
 .container-p {
   width: 80%;
@@ -302,13 +297,12 @@ border-radius: 20px;
   color: #0b090a;
   line-height: normal;
   font-size: 1.4em;
-  
 }
 
 .camisetas {
   width: 100%;
-  
-  background-color: #161A1D;
+
+  background-color: #161a1d;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -317,14 +311,13 @@ border-radius: 20px;
 }
 
 .camisetas h3 {
-    font-size: 3em;
-    text-align: center;
-    color: #F5F3F4;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    font-weight: 700;
-    line-height: normal;
-
+  font-size: 3em;
+  text-align: center;
+  color: #f5f3f4;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .contenedor-cards {
@@ -346,8 +339,16 @@ border-radius: 20px;
   justify-content: space-around;
   align-items: center;
   opacity: 0.5;
-  clip-path: polygon(50% 2%, 100% 0, 98% 50%, 100% 100%, 50% 98%, 0 100%, 2% 50%, 0 0);
-
+  clip-path: polygon(
+    50% 2%,
+    100% 0,
+    98% 50%,
+    100% 100%,
+    50% 98%,
+    0 100%,
+    2% 50%,
+    0 0
+  );
 }
 
 .card-camisetas img {
@@ -364,7 +365,6 @@ border-radius: 20px;
   transition: 1s;
   opacity: 1;
   transform: scale(1.1);
-  
 }
 
 .container-carousel {
@@ -375,27 +375,34 @@ border-radius: 20px;
 
 .carousel-item {
   width: 100%;
-  
-  
 }
 
 .carousel-item img {
- 
-   width: 60%;
-   margin: auto;
-
+  width: 60%;
+  margin: auto;
 }
 
+.section-contacto {
+  width: 100%;
+  height: 60%;
+  background-color: #e5383b ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-
-
-
-
-
-
-
-
+.card-contacto {
+  margin-top: 2em;
+  width: 40%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
+  background-color:  ivory;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+}
 
 
 
@@ -412,5 +419,3 @@ border-radius: 20px;
     height: 80%;
   }
 }
-
-
