@@ -12,22 +12,38 @@ body {
 }
 
 .portada {
-  padding-top: 6%;
-  width: 100%;
-  height: 50%;
+  padding-top: 10%;
+  padding-bottom: 4%;
+  width: 100vw;
+  height: calc(100vh - 40%);
   background-color: #161a1d;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
 }
 
 .container-animacion {
-  width: 55vw;
-  height: 80%;
+  margin-bottom: 3em;
+  width: calc(100% - 50vw);
+  height: calc(100% - 30vh);
   background-color: white;
   opacity: 0%;
   animation: aparecer 20s infinite;
   overflow: hidden;
+}
+
+.titulo {
+  
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.titulo h1 {
+  text-align: center;
+  color: #f5f3f4;
+  font-size: 6rem;
 }
 
 @keyframes aparecer {
@@ -95,7 +111,7 @@ body {
 }
 
 .leon img {
-  width: 16%;
+  width: calc(100% - 84%);
   z-index: 6;
   animation: aparecer2 20s infinite;
 }
@@ -147,7 +163,7 @@ body {
 }
 
 .logo img {
-  width: 7%;
+  width: 10rem;
   position: absolute;
   transition: 1.3s;
 }
@@ -412,10 +428,10 @@ body {
 
 
 .card-contacto h3 {
-  margin-bottom: 0%;
+  
   text-align: center;
-  margin-top: 1.5em;
-  margin-bottom: 2em;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
   color: #f5f3f4;
   font-size: 3em;
   font-weight: 700;
@@ -442,13 +458,20 @@ body {
 .container-input input{
   width: 80%;
   
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
 
+}
+
+.container-input textarea{
+  width: 80%;
+  margin-bottom: 1.5em;
+  color: #808080;
+  opacity: 1;
 }
 
 
   .container-btn{
-    margin-top: 1em;
+    
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -470,7 +493,7 @@ body {
   color: #E5383B;
   letter-spacing: 0.1em;
   text-shadow: 1px 1px 6px rgba(255,255,255,0.75);
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.55);
 }
 
 .container-btn button:hover {
@@ -478,7 +501,7 @@ body {
     cursor: pointer;
     color: #E5383B;
     text-shadow: 1px 1px 6px rgba(255,255,255,0.75);
-  box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
+  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.55);
     box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
     -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
@@ -613,14 +636,205 @@ footer {
 }
 
 
+@media (min-width: 1025px) and (max-width: 1600px){
 
+  .portada {
+    padding-top: 15%;
+  }
 
+  .card-contacto {
+    width: 80%;
+  }
+}
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1300px){
+
+  .card-camisetas {
+    width: 30%;
+    height: auto;
+    
+  }
+
+  .card-camisetas img {
+    width: 80%;
+  }
+
+  .card-camisetas h4 {
+    font-size: 1em;
+  }
+
   .container-animacion {
-    width: 70vw;
-    height: 80%;
+    width: 80%;
+    height: 70%;
+  }
+
+  .leon img {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1199px){
+
+  .card-camisetas {
+    width: 30%;
+    height: auto;
+    
+  }
+
+  .card-camisetas img {
+    width: 80%;
+  }
+
+  .card-camisetas h4 {
+    font-size: 1em;
+  }
+
+  .container-animacion {
+    width: 90%;
+    height: 60%;
+  }
+
+  .leon img {
+    width: 20%;
   }
 }
 
 
+@media (min-width: 1025px){
+  .container-animacion {
+    width: 70%;
+    height: 80%;
+  }
+
+.logo {
+  width: 20%;
+  margin-left: 0%;
+
+}
+
+.navbar {
+  width: 80%;
+  padding: 0%;
+  justify-content: space-evenly;
+
+}
+
+.lista-navegacion {
+  width: 70%;
+  justify-content: space-around;
+  margin-left: 0%;
+}
+
+.login-registrar {
+  width: 30%}
+
+
+
+
+
+}
+
+
+@media (min-width: 1025px) and (max-width: 1400px) {
+
+  .titulo h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logo {
+    margin-left: -1rem;
+    width: 5%;
+  }
+  .fondo-nav{
+    height: auto;
+  }
+  .logo img{
+    width: 8rem;
+  }
+  .navbar {
+    width: 95%;
+    flex-direction: column;
+  }
+  .lista-navegacion {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .login-registrar{
+    width: 100%;
+  }
+
+  .portada{
+    padding-top: 20%;
+  }
+
+  .container-animacion{
+    width: 90%;
+    height: 70%;
+  }
+
+  .diagonal {
+    height: 7rem;
+    transform: skewY(-20deg);
+  }
+
+  .leon img {
+    width: 30%;
+  }
+
+  .titulo h1 {
+    font-size: 3.5rem;
+  }
+
+  .card-quienes-somos {
+    width: 90%;
+    height: 85%;
+  }
+
+  .card-quienes-somos h3 {
+    font-size: 2.5em;
+    align-self: unset;
+    margin-left: 0%;
+  }
+
+  .camisetas h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  .card-camisetas {
+    width: 80%;
+    height: auto;
+    
+  }
+
+  .card-camisetas img {
+    width: 80%;
+  }
+
+  .card-camisetas h4 {
+    font-size: 1em;
+  }
+
+  .card-contacto {
+    width: 80%;
+  }
+
+  .card-contacto h3 {
+    font-size: 2em;
+  }
+
+  .container-input input {
+    margin-bottom: 0.6em;
+  }
+
+  .container-icons{
+    width: 80%;
+  }
+  .container-icons i {
+    font-size: 2.5em;
+  }
+
+}
