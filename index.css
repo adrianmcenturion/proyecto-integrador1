@@ -25,8 +25,8 @@ body {
 
 .container-animacion {
   margin-bottom: 3em;
-  width: 50%;
-  height: 70%;
+  width: 55%;
+  height: 75%;
   background-color: white;
   opacity: 0%;
   animation: aparecer 20s infinite;
@@ -636,16 +636,7 @@ footer {
 }
 
 
-@media (min-width: 1025px) and (max-width: 1600px){
 
-  .portada {
-    padding-top: 15%;
-  }
-
-  .card-contacto {
-    width: 80%;
-  }
-}
 
 @media (min-width: 1200px) and (max-width: 1300px){
 
@@ -700,9 +691,9 @@ footer {
 }
 
 
-@media (min-width: 1025px){
+@media (min-width: 1025px) and (max-width: 1920px){
   .container-animacion {
-    width: 70%;
+    width: 60%;
     height: 80%;
   }
 
@@ -728,8 +719,16 @@ footer {
 .login-registrar {
   width: 30%}
 
+  .titulo h1 {
+    font-size: 3.5rem;
+  }
+.section-contacto{
+  height: 90%;
+}
 
-
+.card-contacto {
+  height: 90%;
+}
 
 
 }
