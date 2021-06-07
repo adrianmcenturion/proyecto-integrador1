@@ -465,8 +465,7 @@ body {
 .container-input textarea{
   width: 80%;
   margin-bottom: 1.5em;
-  color: #808080;
-  opacity: 1;
+  
 }
 
 
@@ -519,7 +518,7 @@ body {
 
 footer {
     width: 100%;
-    height: 15%;
+    height: 10%;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -542,7 +541,7 @@ footer {
 
 .container-icons i {
     margin: 0.5em;
-    font-size: 3em;
+    font-size: 2em;
     color: #F5F3F4;
 }
 
@@ -561,6 +560,7 @@ footer {
 .icon-youtube:hover {
     color: #ff0000;
 }
+
 
 
 
@@ -834,7 +834,7 @@ footer {
     width: 80%;
   }
   .container-icons i {
-    font-size: 2.5em;
+    font-size: 1.5em;
   }
 }
 
@@ -965,7 +965,7 @@ footer {
       width: 80%;
     }
     .container-icons i {
-      font-size: 2em;
+      font-size: 1em;
     }
 }
 
@@ -1113,6 +1113,6 @@ footer {
     width: 80%;
   }
   .container-icons i {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
