@@ -657,7 +657,7 @@ footer {
 
 @media screen and (max-width: 1980px) and (min-width: 1201px) {
   .container-animacion {
-    margin-top: 4em;
+    margin-top: 1em;
     width: 55%;
     height: 30em;
     
@@ -679,7 +679,7 @@ footer {
 
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
   .container-animacion {
-    margin-top: 4em;
+    margin-top: 1em;
     width: 80%;
     height: 70%;
   }
@@ -707,9 +707,9 @@ footer {
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   .container-animacion {
-    margin-top: 4em;
+    margin-top: 2em;
     width: 80%;
-    height: 60%;
+    height: 70%;
   }
 
   .leon img {
