@@ -26,7 +26,7 @@ body {
 .container-animacion {
   margin-bottom: 3em;
   width: 65%;
-  height: 75%;
+  height: 40em;
   background-color: white;
   opacity: 0%;
   animation: aparecer 20s infinite;
@@ -34,7 +34,6 @@ body {
 }
 
 .titulo {
-  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -87,7 +86,7 @@ body {
 @keyframes rellenar {
   0% {
     background-position: left;
-    opacity: 0% ;
+    opacity: 0%;
   }
 
   25% {
@@ -102,7 +101,7 @@ body {
 
   100% {
     background-position: right;
-    opacity: 100% ;
+    opacity: 100%;
   }
 }
 
@@ -415,7 +414,7 @@ body {
   margin-bottom: 3rem;
   width: 100%;
   /* height: 70vh; */
-  background-color: #D3D3D3 ;
+  background-color: #d3d3d3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -425,25 +424,29 @@ body {
   margin-top: 2em;
   width: 60%;
   height: 60em;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2.5em;
   padding-bottom: 0%;
   border-radius: 20px;
--webkit-border-radius: 20px;
--moz-border-radius: 20px;
-  
-  background-color:  #E5383B;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 95%, 50% 75%, 0% 75%);
-  
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+
+  background-color: #e5383b;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    80% 75%,
+    80% 95%,
+    50% 75%,
+    0% 75%
+  );
 }
 
-
-
 .card-contacto h3 {
-  
   text-align: center;
   margin-top: 1em;
   margin-bottom: 1.5em;
@@ -453,45 +456,35 @@ body {
   line-height: normal;
 }
 
-
-
-
-.container-input{
+.container-input {
   margin: 10px 0px;
-  
+
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   font-size: 1.4em;
-  color:#f5f3f4;
-  
+  color: #f5f3f4;
+
   letter-spacing: 00.1em;
-  
 }
 
-.container-input input{
+.container-input input {
   width: 80%;
-  
-  margin-bottom: 1.2em;
 
+  margin-bottom: 1.2em;
 }
 
-.container-input textarea{
+.container-input textarea {
   width: 80%;
   margin-bottom: 1.5em;
-  
 }
 
-
-  .container-btn{
-    
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    
+.container-btn {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
-
 
 .container-btn button {
   background-color: white;
@@ -499,46 +492,44 @@ body {
   height: auto;
   margin-top: 1em;
   margin-bottom: 1em;
-  
+
   padding: 0.6em;
   border-radius: 10px;
   border-style: none;
   font-size: 1.5em;
   font-family: inherit;
-  color: #E5383B;
+  color: #e5383b;
   letter-spacing: 0.1em;
-  text-shadow: 1px 1px 6px rgba(255,255,255,0.75);
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.55);
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.55);
 }
 
 .container-btn button:hover {
-    background-color: white;
-    cursor: pointer;
-    color: #E5383B;
-    text-shadow: 1px 1px 6px rgba(255,255,255,0.75);
-  box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.55);
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
-    -webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
-    -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.55);
-    -webkit-transition: all 200ms ease-in-out;
-    -moz-transition: all 200ms ease-in-out;
-    -ms-transition: all 200ms ease-in-out;
-    -o-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
+  background-color: white;
+  cursor: pointer;
+  color: #e5383b;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 
-
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	        animation: heartbeat 1.5s ease-in-out infinite both;
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-
 footer {
-    width: 100%;
-    height: 10%;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 10%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-icons {
@@ -554,139 +545,127 @@ footer {
   color: inherit;
 }
 
-
 .container-icons i {
-    margin: 0.5em;
-    font-size: 2em;
-    color: #F5F3F4;
+  margin: 0.5em;
+  font-size: 2em;
+  color: #f5f3f4;
 }
 
 .icon-facebook:hover {
-    color: #3b5998;
+  color: #3b5998;
 }
 
 .icon-twitter:hover {
-    color: #1da1f2;
+  color: #1da1f2;
 }
 
 .icon-instagram:hover {
-    color: #c13584;
+  color: #c13584;
 }
 
 .icon-youtube:hover {
-    color: #ff0000;
+  color: #ff0000;
 }
-
-
-
-
-
 
 @-webkit-keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: center center;
-            transform-origin: center center;
+    transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   10% {
     -webkit-transform: scale(0.91);
-            transform: scale(0.91);
+    transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   17% {
     -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   33% {
     -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   45% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 @keyframes heartbeat {
   from {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: center center;
-            transform-origin: center center;
+    transform-origin: center center;
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   10% {
     -webkit-transform: scale(0.91);
-            transform: scale(0.91);
+    transform: scale(0.91);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   17% {
     -webkit-transform: scale(0.98);
-            transform: scale(0.98);
+    transform: scale(0.98);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
   33% {
     -webkit-transform: scale(0.87);
-            transform: scale(0.87);
+    transform: scale(0.87);
     -webkit-animation-timing-function: ease-in;
-            animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
   }
   45% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-animation-timing-function: ease-out;
-            animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 
-@media screen and (max-width:1700px) {
+@media screen and (max-width: 1700px) {
   .logo {
     width: 20%;
   }
 
   .navbar {
-      width: 80%;
-      
+    width: 80%;
+  }
 
-    }
+  .lista-navegacion {
+    width: 80%;
+    justify-content: center;
+  }
 
-    .lista-navegacion {
-      width: 80%;
-      justify-content: center;
-
-    }
-
-    .login-registrar {
-      width: 20%;
-
-    }
-
-
+  .login-registrar {
+    width: 20%;
+  }
 }
 
-@media screen and (max-width:1980px) and (min-width:1201px){
+@media screen and (max-width: 1980px) and (min-width: 1201px) {
   .container-animacion {
     margin-top: 4em;
-    width: 70%;
+    width: 55%;
+    height: 30em;
     
   }
 }
 
-@media screen and (max-width:1200px) and (min-width:1025px){
-
-  .container-animacion{
+@media screen and (max-width: 1200px) and (min-width: 1025px) {
+  .container-animacion {
     margin-top: 4em;
     width: 80%;
     height: 70%;
@@ -694,19 +673,27 @@ footer {
   .leon img {
     width: 30%;
   }
-  
-  .card-camisetas{
+
+  .card-camisetas {
     width: 80%;
   }
 
-  .card-contacto{
+  .card-contacto {
     width: 80%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 90%, 50% 75%, 0% 75%);
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      80% 75%,
+      80% 90%,
+      50% 75%,
+      0% 75%
+    );
   }
 }
 
-@media screen and (max-width:1024px) and (min-width:769px){
-  .container-animacion{
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .container-animacion {
     margin-top: 4em;
     width: 80%;
     height: 60%;
@@ -716,20 +703,26 @@ footer {
     width: 25%;
   }
 
-  .card-camisetas{
+  .card-camisetas {
     width: 80%;
   }
 
-  .card-contacto{
+  .card-contacto {
     width: 80%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 90%, 50% 75%, 0% 75%);
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      80% 75%,
+      80% 90%,
+      50% 75%,
+      0% 75%
+    );
   }
-
 }
 
-@media screen and (max-width:768px) and (min-width:481px){
-
-  .container-animacion{
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .container-animacion {
     margin-top: 4em;
     width: 80%;
     height: 50%;
@@ -746,16 +739,23 @@ footer {
   .card-quienes-somos h3 {
     margin-left: 0%;
     align-self: unset;
-
   }
 
-  .card-camisetas{
+  .card-camisetas {
     width: 80%;
   }
 
-  .card-contacto{
+  .card-contacto {
     width: 85%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 90%, 50% 75%, 0% 75%);
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      80% 75%,
+      80% 90%,
+      50% 75%,
+      0% 75%
+    );
   }
 
   .container-input input {
@@ -765,11 +765,9 @@ footer {
   .container-input textarea {
     width: 70%;
   }
-
 }
 
-@media screen and (max-width:480px) and (min-width:320px){
-
+@media screen and (max-width: 480px) and (min-width: 320px) {
   .logo {
     margin-left: 0%;
     width: 10%;
@@ -788,7 +786,7 @@ footer {
     flex-wrap: nowrap;
     align-items: center;
   }
-  .lista-navegacion{
+  .lista-navegacion {
     margin-top: 0.5em;
     width: 100%;
     justify-content: flex-end;
@@ -797,7 +795,6 @@ footer {
   .login-registrar {
     width: 100%;
     justify-content: flex-end;
-
   }
 
   .portada {
@@ -806,8 +803,7 @@ footer {
     height: 40vh;
   }
 
-  .container-animacion{
-    
+  .container-animacion {
     width: 95%;
     height: 40%;
     margin-bottom: 0%;
@@ -818,7 +814,7 @@ footer {
     width: 25%;
   }
 
-  .diagonal{
+  .diagonal {
     height: 4rem;
   }
 
@@ -826,11 +822,11 @@ footer {
     margin: 0%;
   }
 
-  .card-quienes-somos{
+  .card-quienes-somos {
     width: 95%;
   }
 
-  .card-quienes-somos h3{
+  .card-quienes-somos h3 {
     font-size: 2em;
     align-self: unset;
     margin-left: 0%;
@@ -848,35 +844,39 @@ footer {
   .camisetas h3 {
     font-size: 2em;
     margin-bottom: 0%;
-
   }
 
   .card-camisetas {
     width: 80%;
     margin: 0.5em;
-
   }
 
-  .section-contacto{
+  .section-contacto {
     margin-top: 2rem;
     margin-bottom: -10%;
-
   }
 
-  .card-contacto{
+  .card-contacto {
     margin-top: 0%;
     width: 85%;
     height: 40em;
     padding: 1.5em;
     padding-bottom: 0.5em;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 85%, 50% 75%, 0% 75%);
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      80% 75%,
+      80% 85%,
+      50% 75%,
+      0% 75%
+    );
   }
 
   .card-contacto h3 {
     font-size: 2em;
     margin-top: 0%;
     margin-bottom: 1em;
-
   }
 
   .container-input {
@@ -894,10 +894,4 @@ footer {
   .container-btn button {
     font-size: 1em;
   }
-
-
-
-
-
 }
-
