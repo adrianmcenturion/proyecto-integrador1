@@ -662,6 +662,19 @@ footer {
     height: 30em;
     
   }
+
+  .card-contacto {
+    width: 40%;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 75%,
+      80% 75%,
+      80% 90%,
+      50% 75%,
+      0% 75%
+    );
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
@@ -679,7 +692,7 @@ footer {
   }
 
   .card-contacto {
-    width: 80%;
+    width: 60%;
     clip-path: polygon(
       0% 0%,
       100% 0%,
