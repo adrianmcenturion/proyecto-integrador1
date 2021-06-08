@@ -15,7 +15,7 @@ body {
   padding-top: 10%;
   padding-bottom: 4%;
   width: 100%;
-  height: 60%;
+  height: 60vh;
   background-color: #161a1d;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ body {
 
 .container-animacion {
   margin-bottom: 3em;
-  width: 55%;
+  width: 65%;
   height: 75%;
   background-color: white;
   opacity: 0%;
@@ -43,7 +43,7 @@ body {
 .titulo h1 {
   text-align: center;
   color: #f5f3f4;
-  font-size: 6rem;
+  font-size: clamp(2.3rem, 1.6945rem + 2.6909vw, 6rem);
 }
 
 @keyframes aparecer {
@@ -80,25 +80,29 @@ body {
   background-position: left;
 
   z-index: 2;
-  transform: skewY(-15.5deg);
+  transform: skewY(-20deg);
   animation: rellenar 20s infinite;
 }
 
 @keyframes rellenar {
   0% {
     background-position: left;
+    opacity: 0% ;
   }
 
   25% {
     background-position: left;
+    opacity: 20%;
   }
 
   50% {
     background-position: right;
+    opacity: 100%;
   }
 
   100% {
     background-position: right;
+    opacity: 100% ;
   }
 }
 
@@ -111,7 +115,7 @@ body {
 }
 
 .leon img {
-  width: calc(100% - 84%);
+  width: 16%;
   z-index: 6;
   animation: aparecer2 20s infinite;
 }
@@ -196,7 +200,7 @@ body {
   align-items: center;
   padding: 0 0.3em;
   list-style: none;
-  font-size: 1.4em;
+  font-size: clamp(0.68rem, 0.5622rem + 0.5236vw, 1.4rem);
   color: #f5f3f4;
   white-space: nowrap;
   text-transform: uppercase;
@@ -218,7 +222,7 @@ body {
 .login-registrar a {
   padding: 0 0.3em;
   text-decoration: none;
-  font-size: 1.4em;
+  font-size: clamp(0.68rem, 0.5622rem + 0.5236vw, 1.4rem);
   color: #f5f3f4;
   text-transform: uppercase;
   display: flex;
@@ -240,8 +244,10 @@ body {
 }
 
 .section-quienes-somos {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   width: 100%;
-  height: 80%;
+  /* height: 80vh; */
   background-color: #d3d3d3;
   display: flex;
   flex-direction: column;
@@ -256,14 +262,18 @@ body {
   display: flex;
   align-self: flex-start;
   margin-left: 4em;
-  margin-top: 0%;
-  margin-bottom: 0%;
+  margin-top: 1em;
+  margin-bottom: 2em;
   font-weight: 700;
 }
 
 .card-quienes-somos {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
   width: 80%;
-  height: 60%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -332,7 +342,7 @@ body {
   font-size: 3em;
   text-align: center;
   color: #f5f3f4;
-  margin-top: 3em;
+  margin-top: 1.5em;
   margin-bottom: 1.5em;
   font-weight: 700;
   line-height: normal;
@@ -401,8 +411,10 @@ body {
 }
 
 .section-contacto {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   width: 100%;
-  height: 80%;
+  /* height: 70vh; */
   background-color: #D3D3D3 ;
   display: flex;
   justify-content: center;
@@ -410,19 +422,22 @@ body {
 }
 
 .card-contacto {
-  margin-top: 3em;
-  width: 40%;
-  height: 80%;
+  margin-top: 2em;
+  width: 60%;
+  height: 60em;
+  
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  padding: 2em;
+  justify-content: space-between;
+  padding: 2.5em;
+  padding-bottom: 0%;
   border-radius: 20px;
 -webkit-border-radius: 20px;
 -moz-border-radius: 20px;
   
   background-color:  #E5383B;
   clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 95%, 50% 75%, 0% 75%);
+  
 }
 
 
@@ -433,7 +448,7 @@ body {
   margin-top: 1em;
   margin-bottom: 1.5em;
   color: #f5f3f4;
-  font-size: 3em;
+  font-size: 3.2em;
   font-weight: 700;
   line-height: normal;
 }
@@ -448,7 +463,7 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color:#f5f3f4;
   
   letter-spacing: 00.1em;
@@ -458,7 +473,7 @@ body {
 .container-input input{
   width: 80%;
   
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
 
 }
 
@@ -473,7 +488,7 @@ body {
     
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
     
 }
 
@@ -483,7 +498,8 @@ body {
   width: 7em;
   height: auto;
   margin-top: 1em;
-  margin-right: 1em;
+  margin-bottom: 1em;
+  
   padding: 0.6em;
   border-radius: 10px;
   border-style: none;
@@ -635,483 +651,253 @@ footer {
   }
 }
 
-
-
-
-@media (min-width: 1200px) and (max-width: 1300px){
-
-  .card-camisetas {
-    width: 30%;
-    height: auto;
-    
-  }
-
-  .card-camisetas img {
-    width: 80%;
-  }
-
-  .card-camisetas h4 {
-    font-size: 1em;
-  }
-
-  .container-animacion {
-    width: 80%;
-    height: 70%;
-  }
-
-  .leon img {
+@media screen and (max-width:1700px) {
+  .logo {
     width: 20%;
+  }
+
+  .navbar {
+      width: 80%;
+      
+
+    }
+
+    .lista-navegacion {
+      width: 80%;
+      justify-content: center;
+
+    }
+
+    .login-registrar {
+      width: 20%;
+
+    }
+
+
+}
+
+@media screen and (max-width:1980px) and (min-width:1201px){
+  .container-animacion {
+    margin-top: 4em;
+    width: 70%;
+    
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1199px){
+@media screen and (max-width:1200px) and (min-width:1025px){
 
-  .card-camisetas {
-    width: 30%;
-    height: auto;
-    
+  .container-animacion{
+    margin-top: 4em;
+    width: 80%;
+    height: 70%;
   }
-
-  .card-camisetas img {
+  .leon img {
+    width: 30%;
+  }
+  
+  .card-camisetas{
     width: 80%;
   }
 
-  .card-camisetas h4 {
-    font-size: 1em;
+  .card-contacto{
+    width: 80%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 90%, 50% 75%, 0% 75%);
   }
+}
 
-  .container-animacion {
-    width: 90%;
+@media screen and (max-width:1024px) and (min-width:769px){
+  .container-animacion{
+    margin-top: 4em;
+    width: 80%;
     height: 60%;
   }
 
   .leon img {
-    width: 20%;
-  }
-}
-
-
-@media (min-width: 1025px) and (max-width: 1920px){
-  .container-animacion {
-    width: 60%;
-    height: 80%;
+    width: 25%;
   }
 
-.logo {
-  width: 20%;
-  margin-left: 0%;
+  .card-camisetas{
+    width: 80%;
+  }
+
+  .card-contacto{
+    width: 80%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 90%, 50% 75%, 0% 75%);
+  }
 
 }
 
-.navbar {
-  width: 80%;
-  padding: 0%;
-  justify-content: space-evenly;
-
-}
-
-.lista-navegacion {
-  width: 70%;
-  justify-content: space-around;
-  margin-left: 0%;
-}
-
-.login-registrar {
-  width: 30%}
-
-  .titulo h1 {
-    font-size: 3.5rem;
-  }
-.section-contacto{
-  height: 90%;
-}
-
-.card-contacto {
-  height: 90%;
-}
-
-
-}
-
-
-@media (min-width: 1025px) and (max-width: 1400px) {
-
-  .titulo h1 {
-    font-size: 4rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .logo {
-    margin-left: -1rem;
-    width: 5%;
-  }
-  .fondo-nav{
-    height: auto;
-  }
-  .logo img{
-    width: 8rem;
-  }
-  .navbar {
-    width: 95%;
-    flex-direction: column;
-  }
-  .lista-navegacion {
-    width: 100%;
-    justify-content: flex-end;
-  }
-
-  .login-registrar{
-    width: 100%;
-  }
-
-  .portada{
-    padding-top: 20%;
-  }
+@media screen and (max-width:768px) and (min-width:481px){
 
   .container-animacion{
-    width: 90%;
-    height: 70%;
-  }
-
-  .diagonal {
-    height: 7rem;
-    transform: skewY(-20deg);
+    margin-top: 4em;
+    width: 80%;
+    height: 50%;
   }
 
   .leon img {
-    width: 30%;
-  }
-
-  .titulo h1 {
-    font-size: 3.5rem;
+    width: 25%;
   }
 
   .card-quienes-somos {
     width: 90%;
-    height: 85%;
   }
 
   .card-quienes-somos h3 {
-    font-size: 2.5em;
-    align-self: unset;
     margin-left: 0%;
+    align-self: unset;
+
   }
 
-  .camisetas h3 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-  }
-
-  .card-camisetas {
-    width: 80%;
-    height: auto;
-    
-  }
-
-  .card-camisetas img {
+  .card-camisetas{
     width: 80%;
   }
 
-  .card-camisetas h4 {
-    font-size: 1em;
-  }
-
-  .card-contacto {
-    width: 80%;
-  }
-
-  .card-contacto h3 {
-    font-size: 2em;
+  .card-contacto{
+    width: 85%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 90%, 50% 75%, 0% 75%);
   }
 
   .container-input input {
-    margin-bottom: 0.6em;
+    width: 70%;
   }
 
-  .container-icons{
-    width: 80%;
+  .container-input textarea {
+    width: 70%;
   }
-  .container-icons i {
-    font-size: 1.5em;
-  }
+
 }
 
+@media screen and (max-width:480px) and (min-width:320px){
 
-  @media (min-width: 481px) and (max-width: 768px) {
-    .logo {
-      margin-left: -1rem;
-      width: 5%;
-    }
-    .fondo-nav{
-      height: auto;
-    }
-    .logo img{
-      width: 6.5rem;
-    }
-    .navbar {
-      width: 95%;
-      flex-direction: column;
-    }
-    .lista-navegacion {
-      width: 100%;
-      justify-content: flex-end;
-    }
+  .logo {
+    margin-left: 0%;
+    width: 10%;
+  }
 
-    .lista-navegacion li {
-      font-size: 1em;
-    }
-  
-    .login-registrar{
-      width: 100%;
-    }
-
-    .login-registrar a {
-      font-size: 1em;
-    }
-  
-    .portada{
-      padding-top: 30%;
-      height: 50%;
-    }
-  
-    .container-animacion{
-      width: 90%;
-      height: 50%;
-      margin-bottom: 0%;
-    }
-  
-    .diagonal {
-      height: 5rem;
-      transform: skewY(-24deg);
-    }
-  
-    .leon img {
-      width: 30%;
-    }
-  
-    .titulo h1 {
-      font-size: 2.3rem;
-    }
-  
-    .card-quienes-somos {
-      width: 90%;
-      height: 85%;
-    }
-  
-    .card-quienes-somos h3 {
-      font-size: 2.2em;
-      align-self: unset;
-      margin-left: 0%;
-    }
-    .container-p{
-      font-size: 1.05em;
-    }
-
-    .camisetas{
-      padding-top: 0%;
-    }
-  
-    .camisetas h3 {
-      margin-top: 1em;
-      margin-bottom: 0.5em;
-      font-size: 2.2em;
-    }
-    .contenedor-cards{
-      margin: 0%;
-    }
-  
-    .card-camisetas {
-      width: 80%;
-      height: auto;
-      
-      
-    }
-  
-    .card-camisetas img {
-      width: 80%;
-    }
-  
-    .card-camisetas h4 {
-      font-size: 1em;
-    }
-  
-    .card-contacto {
-      width: 80%;
-    }
-  
-    .card-contacto h3 {
-      font-size: 2em;
-      margin-top: 0%;
-    }
-  
-    .container-input input {
-      margin-bottom: 0.6em;
-      width: 60%;
-    }
-
-    .container-input textarea {
-      margin-bottom: 0.6em;
-      width: 60%;
-    }
-
-    .container-btn button {
-      width: 6em;
-      font-size: 1.1em;
-    }
-  
-    .container-icons{
-      width: 80%;
-    }
-    .container-icons i {
-      font-size: 1em;
-    }
-}
-
-
-@media (min-width: 320px) and (max-width: 480px) {
+  .logo img {
+    width: 5rem;
+  }
 
   .container-navbar {
     height: 8%;
   }
-  .logo {
-    margin-left: -1rem;
-    width: 5%;
-  }
-  .fondo-nav{
-    height: auto;
-  }
-  .logo img{
-    width: 4.5rem;
-  }
+
   .navbar {
-    width: 95%;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
   }
-  .lista-navegacion {
+  .lista-navegacion{
+    margin-top: 0.5em;
     width: 100%;
     justify-content: flex-end;
   }
 
-  .lista-navegacion li {
-    font-size: 0.78em;
-  }
-
-  .login-registrar{
+  .login-registrar {
     width: 100%;
+    justify-content: flex-end;
+
   }
 
-  .login-registrar a {
-    font-size: 0.78em;
-  }
-
-  .portada{
-    padding-top: 30%;
-    height: 50%;
+  .portada {
+    padding-bottom: 0%;
+    padding-top: 20%;
+    height: 40vh;
   }
 
   .container-animacion{
+    
     width: 95%;
-    height: 55%;
+    height: 40%;
     margin-bottom: 0%;
-  }
-
-  .diagonal {
-    height: 4rem;
-    transform: skewY(-24deg);
+    margin-top: 2em;
   }
 
   .leon img {
-    width: 35%;
+    width: 25%;
   }
 
-  .titulo h1 {
-    font-size: 2.3rem;
+  .diagonal{
+    height: 4rem;
   }
 
-  .section-quienes-somos{
-    margin-top: 6%;
-  }
-
-  .card-quienes-somos {
-    width: 95%;
-    height: 100%;
-  }
-
-  .card-quienes-somos h3 {
-    font-size: 1.6em;
-    align-self: unset;
-    margin-left: 0%;
-  }
-  .container-p{
-    font-size: 0.9em;
-  }
-
-
-  .camisetas{
-    padding-top: 0%;
-    margin-top: 6%;
-  }
-
-  .camisetas h3 {
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    font-size: 1.6em;
-  }
-  .contenedor-cards{
+  .section-quienes-somos {
     margin: 0%;
   }
 
-  .card-camisetas {
+  .card-quienes-somos{
     width: 95%;
-    height: auto;
-    
-    
   }
 
-  .card-camisetas img {
-    width: 80%;
-  }
-
-  .card-camisetas h4 {
-    font-size: 1em;
-  }
-
-  .card-contacto {
-    width: 90%;
-    padding: 1em;
-  }
-
-  .card-contacto h3 {
-    font-size: 1.6em;
+  .card-quienes-somos h3{
+    font-size: 2em;
+    align-self: unset;
+    margin-left: 0%;
     margin-top: 0%;
   }
 
+  .container-p {
+    font-size: 0.85em;
+  }
+
+  .camisetas {
+    padding: 0%;
+  }
+
+  .camisetas h3 {
+    font-size: 2em;
+    margin-bottom: 0%;
+
+  }
+
+  .card-camisetas {
+    width: 80%;
+    margin: 0.5em;
+
+  }
+
+  .section-contacto{
+    margin-top: 2rem;
+    margin-bottom: -10%;
+
+  }
+
+  .card-contacto{
+    margin-top: 0%;
+    width: 85%;
+    height: 40em;
+    padding: 1.5em;
+    padding-bottom: 0.5em;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 80% 75%, 80% 85%, 50% 75%, 0% 75%);
+  }
+
+  .card-contacto h3 {
+    font-size: 2em;
+    margin-top: 0%;
+    margin-bottom: 1em;
+
+  }
+
   .container-input {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   .container-input input {
-    margin-bottom: 0.2em;
-    width: 65%;
+    width: 70%;
   }
 
   .container-input textarea {
-    margin-bottom: 0.2em;
-    width: 65%;
+    width: 70%;
   }
 
   .container-btn button {
-    width: 6em;
-    font-size: 0.9em;
-    margin-top: 0.5em;
-    margin-right: 0.5em;
-  }
-
-  .container-icons{
-    width: 80%;
-  }
-  .container-icons i {
     font-size: 1em;
   }
+
+
+
+
+
 }
+
