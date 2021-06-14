@@ -154,6 +154,7 @@ body {
   justify-content: space-around;
 
   background-color: #0b090a;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23161a1d' x='-60' y='-60' width='63' height='240'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 .logo {
@@ -528,7 +529,8 @@ body {
 footer {
   width: 100%;
   height: 10%;
-  background-color: black;
+  background-color: #0b090a;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='0' %3E%3Crect fill='%23161a1d' x='-60' y='-60' width='63' height='240'/%3E%3C/g%3E%3C/svg%3E");
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,6 +570,218 @@ footer {
 .icon-youtube:hover {
   color: #ff0000;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section-registro {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  /* height: 70vh; */
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-registro {
+  margin-top: 2em;
+  width: 30%;
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5em;
+  padding-bottom: 0%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+
+  background-color: #A4161A;
+opacity: 1;
+background: repeating-linear-gradient( -45deg, #A4161A, #A4161A 2px, #BA181B 2px, #BA181B 10px );
+
+  /* background-color: #ba181b;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 20 20'%3E%3Cg fill-opacity='0.09'%3E%3Cpolygon fill='%23e5383b' points='20 10 10 0 0 0 20 20'/%3E%3Cpolygon fill='%23e5383b' points='0 10 0 20 10 20'/%3E%3C/g%3E%3C/svg%3E"); */
+
+  
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.card-registro h3 {
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  color: #f5f3f4;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: normal;
+  margin-block-start: 0%;
+  
+  
+}
+
+.container-input-reg {
+  margin: 10px 0px;
+
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  color: #f5f3f4;
+
+  letter-spacing: 00.1em;
+}
+
+.container-input-reg input {
+  font-size: 1.6em;
+  width: 100%;
+  height: 15%;
+  border-radius: 6px;
+
+  margin-bottom: 1.2em;
+  padding: 0.6em;
+}
+
+.container-checkbox-reg{
+  margin: 10px 0px;
+
+  width: 85%;
+  display: flex;
+  
+  justify-content: flex-start;
+  
+  
+  align-items: center;
+  font-size: 0.95em;
+  
+  
+  color: #f5f3f4;
+
+  letter-spacing: 00.1em;
+  
+}
+
+.container-checkbox-reg input {
+  
+
+  font-size: 1.4em;
+  
+  
+  border-radius: 6px;
+  margin-right: 1em;
+
+  margin-bottom: 1.2em;
+  padding: 0.6em;
+}
+
+
+.container-btn-reg {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container-btn-reg button {
+  background-color: white;
+  width: auto;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  padding: 0.6em;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 1.5em;
+  font-family: inherit;
+  font-weight: 700;
+  color: #e5383b;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.55);
+}
+
+.container-btn-reg button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #e5383b;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @-webkit-keyframes heartbeat {
   from {
@@ -658,6 +872,8 @@ footer {
   .card-contacto{
     width: 40%;
   }
+
+  
 }
 
 @media screen and (max-width: 1980px) and (min-width: 1201px) {
@@ -697,6 +913,9 @@ footer {
       0% 75%
     );
   }
+  .card-registro {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
@@ -725,6 +944,9 @@ footer {
       0% 75%
     );
   }
+  .card-registro {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -736,6 +958,10 @@ footer {
 
   .leon img {
     width: 25%;
+  }
+
+  .logo {
+    margin-left: 0%;
   }
 
   .card-camisetas {
@@ -753,6 +979,9 @@ footer {
       50% 75%,
       0% 75%
     );
+  }
+  .card-registro {
+    width: 75%;
   }
 }
 
@@ -808,16 +1037,38 @@ footer {
   .container-input textarea {
     width: 70%;
   }
+  .card-registro {
+    width: 80%;
+  }
+
+  /* .card-registro h3 {
+    font-size: 1.5em;
+}
+
+.container-input-reg input {
+  font-size: 0.9em;
+}
+
+.container-checkbox-reg {
+  font-size: 0.75em;
+}
+
+.container-btn-reg button {
+  font-size: 1em;
+} */
 }
 
 @media screen and (max-width: 480px) and (min-width: 320px) {
   .logo {
     margin-left: 0%;
     width: 10%;
+    opacity: 0%;
+    position: absolute;
   }
 
   .logo img {
-    width: 4rem;
+    width: 2rem;
+
   }
 
   .container-navbar {
@@ -874,7 +1125,7 @@ footer {
   }
 
   .card-quienes-somos h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     align-self: unset;
     margin-left: 0%;
     margin-top: 0%;
@@ -889,7 +1140,7 @@ footer {
   }
 
   .camisetas h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: 0%;
   }
 
@@ -906,7 +1157,7 @@ footer {
   .card-contacto {
     margin-top: 0%;
     width: 85%;
-    height: 40em;
+    height: 30em;
     padding: 1.5em;
     padding-bottom: 0.5em;
     clip-path: polygon(
@@ -921,13 +1172,13 @@ footer {
   }
 
   .card-contacto h3 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 0%;
     margin-bottom: 1em;
   }
 
   .container-input {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .container-input input {
@@ -941,4 +1192,29 @@ footer {
   .container-btn button {
     font-size: 1em;
   }
+
+  .card-registro {
+    width: 80%;
+  }
+
+  .card-registro h3 {
+    font-size: 1.5em;
 }
+
+.container-input-reg input {
+  font-size: 0.9em;
+}
+
+.container-checkbox-reg {
+  font-size: 0.75em;
+}
+
+.container-btn-reg button {
+  font-size: 1em;
+}
+}
+
+
+
+
+
