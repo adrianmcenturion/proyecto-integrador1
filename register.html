@@ -1,59 +1,65 @@
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="index.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
     <section class="section-registro" id="registro">
-        <div class="card-registro">
-          
-          <form action="">
-          <h3>REGISTRARSE</h3>
-          
-          
+      <div class="card-registro">
+        <form action="">
+          <h3>CREAR UNA CUENTA</h3>
+
           <div class="container-input-reg">
             <label for="nombre"></label>
-            <input type="text" name="nombre" placeholder="Ingrese su nombre">
-        </div>
+            <input type="text" name="nombre" placeholder="Ingrese su nombre" />
+          </div>
 
-        <div class="container-input-reg">
+          <div class="container-input-reg">
             <label for="apellido"></label>
-            <input type="text" name="apellido" placeholder="Ingrese su apellido">
-        </div>
+            <input
+              type="text"
+              name="apellido"
+              placeholder="Ingrese su apellido"
+            />
+          </div>
 
-        <div class="container-input-reg">
+          <div class="container-input-reg">
             <label for="email"></label>
-            <input type="email" name="email" placeholder="Ingrese su email">
-        </div>
+            <input type="text" name="email" placeholder="Ingrese su email" />
+          </div>
 
-        <div class="container-input-reg">
-          <label for="mensaje"></label>
-          <input type="password" name="password" placeholder="Ingrese su contraseña">
+          <div class="container-input-reg">
+            <label for="password"></label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Ingrese su contraseña"
+            />
+          </div>
+
+          <div class="container-input-reg">
+            <label for="password"></label>
+            <input
+              type="password"
+              name="password"
+              placeholder="Ingrese su contraseña nuevamente"
+            />
+          </div>
+
+          <div class="container-checkbox-reg">
+            <input type="checkbox" name="checkbox" />He leído y acepto los
+            términos y condiciones de uso.
+          </div>
+
+          <div class="container-btn-reg">
+            <button>REGISTRARSE</button>
+          </div>
+
+          <p>Ya tengo una cuenta! <a href="login.html">Iniciar Sesión</a></p>
+        </form>
       </div>
-
-
-      <div class="container-input-reg">
-        <label for="mensaje"></label>
-        <input type="password" name="password" placeholder="Ingrese su contraseña nuevamente">
-    </div>
-
-    <div class="container-checkbox-reg">
-      
-      <input type="checkbox" name="checkbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae at incidunt dignissimos, possimus accusantium excepturi esse optio beatae ipsa maxime saepe dolorem, itaque consectetur ab atque modi sunt magni blanditiis!
-      
-  </div>
-      
-
-        <div class="container-btn-reg">
-          <button>REGISTRARSE</button>
-      </div>
-          
-      </form>
-        </div>
-      </section>
-
-    
-</body>
+    </section>
+  </body>
 </html>

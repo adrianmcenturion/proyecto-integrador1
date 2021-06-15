@@ -425,7 +425,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .card-contacto {
   margin-top: 2em;
-  width: 60%;
+  width: 30%;
   height: 60em;
 
   display: flex;
@@ -437,7 +437,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
 
-  background-color: #e5383b;
+  background-color: #A4161A;
+opacity: 1;
+background: repeating-linear-gradient( -45deg, #A4161A, #A4161A 2px, #BA181B 2px, #BA181B 10px );
   clip-path: polygon(
     0% 0%,
     100% 0%,
@@ -586,7 +588,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .section-registro {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  width: 100%;
+  /* width: 100%; */
   /* height: 70vh; */
   background-color: #d3d3d3;
   display: flex;
@@ -596,7 +598,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .card-registro {
   margin-top: 2em;
-  width: 30%;
+  /* width: 30%; */
   
 
   display: flex;
@@ -620,7 +622,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 }
 
 form {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -630,7 +632,7 @@ form {
 .card-registro h3 {
   text-align: center;
   margin-top: 1em;
-  margin-bottom: 1.5em;
+  margin-bottom: 1em;
   color: #f5f3f4;
   font-size: 3em;
   font-weight: 700;
@@ -645,7 +647,7 @@ form {
 
   width: 85%;
   display: flex;
-  flex-direction: column;
+  
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
@@ -656,12 +658,12 @@ form {
 }
 
 .container-input-reg input {
-  font-size: 1.6em;
+  font-size: 1.4em;
   width: 100%;
   height: 15%;
   border-radius: 6px;
 
-  margin-bottom: 1.2em;
+  
   padding: 0.6em;
 }
 
@@ -674,7 +676,7 @@ form {
   justify-content: flex-start;
   
   
-  align-items: center;
+  
   font-size: 0.95em;
   
   
@@ -686,24 +688,37 @@ form {
 
 .container-checkbox-reg input {
   
-
-  font-size: 1.4em;
+  
+  font-size: 1.1em;
   
   
   border-radius: 6px;
-  margin-right: 1em;
+  
 
   margin-bottom: 1.2em;
   padding: 0.6em;
+}
+
+.card-registro p {
+  font-size: 0.95em;
+  
+  
+  color: #f5f3f4;
+
+  letter-spacing: 00.1em;
+}
+
+.card-registro p a {
+  color: inherit;
+  
 }
 
 
 .container-btn-reg {
   display: flex;
   width: 100%;
-  justify-content: flex-end;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  justify-content: center;
+  
 }
 
 .container-btn-reg button {
@@ -745,10 +760,125 @@ form {
 }
 
 
+.section-login {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
+  /* height: 70vh; */
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-login {
+  margin-top: 2em;
+  
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2.5em;
+  padding-bottom: 0%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+
+  background-color: #A4161A;
+opacity: 1;
+background: repeating-linear-gradient( -45deg, #A4161A, #A4161A 2px, #BA181B 2px, #BA181B 10px );
+}
+
+.card-login img {
+  width: 13em;
+  margin-bottom: 2em;
+}
+
+.container-input-log {
+  margin: 10px 0px;
+font-size: 1em;
+  
+  display: flex;
+  
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  color: #f5f3f4;
+
+  letter-spacing: 00.1em;
+}
+
+.container-input-log input {
+  font-size: 1.4em;
+  
+  
+  border-radius: 6px;
+
+  
+  padding: 0.6em;
+}
 
 
+.container-btn-log {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
+.container-btn-log button {
+  background-color: white;
+  width: auto;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
 
+  padding: 0.6em;
+  border-radius: 10px;
+  border-style: none;
+  font-size: 1.5em;
+  font-family: inherit;
+  font-weight: 700;
+  color: #e5383b;
+  letter-spacing: 0.1em;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.55);
+}
+
+.container-btn-log button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #e5383b;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.75);
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.55);
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.55);
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+
+  -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+  animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+.link-reg {
+
+  font-size: 0.95em;
+  
+  
+  color: #f5f3f4;
+
+  letter-spacing: 00.1em;
+
+  margin-bottom: 2em;
+}
 
 
 
@@ -869,9 +999,9 @@ form {
   .login-registrar {
     width: 20%;
   } */
-  .card-contacto{
+  /* .card-contacto{
     width: 40%;
-  }
+  } */
 
   
 }
@@ -913,9 +1043,9 @@ form {
       0% 75%
     );
   }
-  .card-registro {
+  /* .card-registro {
     width: 45%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1200px) and (min-width: 1025px) {
@@ -944,9 +1074,9 @@ form {
       0% 75%
     );
   }
-  .card-registro {
+  /* .card-registro {
     width: 60%;
-  }
+  } */
 }
 
 @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -980,9 +1110,9 @@ form {
       0% 75%
     );
   }
-  .card-registro {
+  /* .card-registro {
     width: 75%;
-  }
+  } */
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
@@ -1037,9 +1167,9 @@ form {
   .container-input textarea {
     width: 70%;
   }
-  .card-registro {
+  /* .card-registro {
     width: 80%;
-  }
+  } */
 
   /* .card-registro h3 {
     font-size: 1.5em;
@@ -1157,7 +1287,7 @@ form {
   .card-contacto {
     margin-top: 0%;
     width: 85%;
-    height: 30em;
+    height: 34em;
     padding: 1.5em;
     padding-bottom: 0.5em;
     clip-path: polygon(
@@ -1193,9 +1323,9 @@ form {
     font-size: 1em;
   }
 
-  .card-registro {
+  /* .card-registro {
     width: 80%;
-  }
+  } */
 
   .card-registro h3 {
     font-size: 1.5em;
