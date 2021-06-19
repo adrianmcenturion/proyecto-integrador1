@@ -3,6 +3,7 @@
   font-family: "Merriweather Sans", sans-serif;
   box-sizing: inherit;
   font-weight: inherit;
+  scroll-padding-top: 160px;
 }
 
 body {
@@ -1349,6 +1350,10 @@ font-size: 1em;
 
 .container-btn-reg button {
   font-size: 1em;
+}
+
+.card-login {
+  padding: 1.5em;
 }
 }
 
